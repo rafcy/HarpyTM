@@ -1,7 +1,8 @@
 # Traffic Monitoring Application in Python - Harpy Dataset Source Code.
 
 **Project Website link - https://www.kios.ucy.ac.cy/harpydata/**
-**Repository onitially published here https://codeocean.com/capsule/6749177/tree.**
+
+**Repository initially published here https://codeocean.com/capsule/6749177/tree.**
 
 The main purpose of the application is to extract traffic data from vehicles on roads using aerial footage taken from static UAVs. To process the footage, deep neural network detector is used (YOLO) alongside with the OpenCV library in ordered to be executed in python. Furthermore, multiple algorithms are used, such as Kalman, Hungarian, in order to match the detections between sequential frames and extract the vehicles and their trajectories. Hence, the velocities and the moving direction of the vehicles are also calculated for each vehicle for every frame. More information about the algorithms used can be found in the 'Extracting the fundamental diagram from aerial footage' paper cited below.
 
