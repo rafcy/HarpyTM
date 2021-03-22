@@ -1,13 +1,15 @@
 # Traffic Monitoring Application in Python - Harpy Dataset Source Code.
 
-Project's Website link - https://www.kios.ucy.ac.cy/harpydata/
-Repository onitially published here https://codeocean.com/capsule/6749177/tree. 
+**Project Website link - https://www.kios.ucy.ac.cy/harpydata/**
+**Repository onitially published here https://codeocean.com/capsule/6749177/tree.**
 
 The main purpose of the application is to extract traffic data from vehicles on roads using aerial footage taken from static UAVs. To process the footage, deep neural network detector is used (YOLO) alongside with the OpenCV library in ordered to be executed in python. Furthermore, multiple algorithms are used, such as Kalman, Hungarian, in order to match the detections between sequential frames and extract the vehicles and their trajectories. Hence, the velocities and the moving direction of the vehicles are also calculated for each vehicle for every frame. More information about the algorithms used can be found in the 'Extracting the fundamental diagram from aerial footage' paper cited below.
 
-Our paper introducing the Harpy dataset and the used methods is published at the IEEE VTC 2020 and available here, https://ieeexplore.ieee.org/document/9128534. A preprint on arXiv.org is available here,https://arxiv.org/abs/2007.03227. 
-To reference the dataset or the source code , please cite this publication: 
->
+Our paper introducing the Harpy dataset and the used methods is published at the IEEE VTC 2020 and available here, https://ieeexplore.ieee.org/document/9128534.
+A preprint on arXiv.org is available here,https://arxiv.org/abs/2007.03227. 
+
+##### To reference the dataset or the source code, please cite this publication: 
+
 > @inproceedings{makrigiorgis2020extracting,
 >  title={Extracting the fundamental diagram from aerial footage},
 >  author={Makrigiorgis, Rafael and Kolios, Panayiotis and Timotheou, Stelios and Theocharides, Theocharis and Panayiotou, Christos G},
@@ -35,12 +37,12 @@ More accurate data results are also available at data/Extra_results/. They were 
 
     [Video]
     video_filename		= string	, path to the video file
-    resize 		= boolean	, True if willing to resize the image before processing (improving performance)
+    resize 			= boolean	, True if willing to resize the image before processing (improving performance)
     image_width 		= int		, Width of the resize image (if resize=True)
     image_height 		= int		, Height of the resize image (if resize=True)
     display_video		= boolean	, True for displaying result video while processing (not working on codeocean)
     display_width 		= int		, Width of the display window size(if display_video=True)
-    display_height 	= int		, Height of the display window size (if display_video=True)
+    display_height 		= int		, Height of the display window size (if display_video=True)
     
     [Export]
     save_video_results	= boolean	, True to export the result in a video
@@ -50,11 +52,11 @@ More accurate data results are also available at data/Extra_results/. They were 
     display_track		= boolean	, True to display vehicle trajectories on the display window
     
     [Detector]
-    darknet_config 	= string	, Path for the darknet model cfg file
+    darknet_config 		= string	, Path for the darknet model cfg file
     darknet_weights 	= string	, Path for the darknet model weights file
     classes_file 		= string	, Path for the classes file
     cfg_size_width		= int		, Resize width of the image during the detection process 
-    cfg_size_height	= int		, Resize height of the image during the detection process 
+    cfg_size_height		= int		, Resize height of the image during the detection process 
     iou_thresh 		= float		, IOU threshold 
     conf_thresh 		= float		, Confidence threshold 
     nms_thresh 		= float		, Non Maximum Suppression (NMS) threshold 
@@ -66,7 +68,7 @@ More accurate data results are also available at data/Extra_results/. They were 
     sensor_width		= float		, Camera's sensor width eg. 0.617
     focal_length		= float		, Camera's focal length eg. 0.567
     reset_boxes_frames	= int		, Determine the range of frames that vehicles are set as inactive if not found.
-    calc_velocity_n	= int		, Number of detections to be included in the velocity calculation
+    calc_velocity_n		= int		, Number of detections to be included in the velocity calculation
     draw_tracks		= boolean	, True to draw the trajectories on the display image / exported video
     export_data		= boolean	, True to export results of the tracking to CSV files>
 
@@ -77,6 +79,6 @@ Credits to Kios Center of Excellence: https://www.kios.ucy.ac.cy/
 
 # Related References:
 
-1 YoloV4					:	https://github.com/AlexeyAB/darknet
-2 Darknet					:	https://pjreddie.com/darknet/
-3 Kios Center of Excellence	    :	https://www.kios.ucy.ac.cy/
+1.  YoloV4					:	https://github.com/AlexeyAB/darknet
+2.  Darknet					:	https://pjreddie.com/darknet/
+3.  Kios Center of Excellence	    :	https://www.kios.ucy.ac.cy/
