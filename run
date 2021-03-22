@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -ex
+
+mkdir -p /results/Extra_results && mv /data/Extra_results/*.csv /results/Extra_results
+mkdir -p /results/Extra_results/videos && mv /data/Extra_results/*.mp4 /results/Extra_results/videos
+mv /data/Extra_results/Detections/videos/*.mp4 /results/Extra_results/videos
+
+mv /data/Extra_results/* /results
+# This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
+python -u Monitoring.py "$@"
