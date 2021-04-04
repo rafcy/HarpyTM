@@ -2,8 +2,6 @@
 
 **Project Website link - https://www.kios.ucy.ac.cy/harpydata/**
 
-![Demo Video of this Proejct](https://user-images.githubusercontent.com/15671165/113510212-72c85f80-9562-11eb-83d2-7aeaca05a68a.mp4)
-
 **Repository initially published here https://codeocean.com/capsule/6749177/tree.**
 
 The main purpose of the application is to extract traffic data from vehicles on roads using aerial footage taken from static UAVs. To process the footage, deep neural network detector is used (YOLO) alongside with the OpenCV library in ordered to be executed in python. Furthermore, multiple algorithms are used, such as Kalman, Hungarian, in order to match the detections between sequential frames and extract the vehicles and their trajectories. Hence, the velocities and the moving direction of the vehicles are also calculated for each vehicle for every frame. More information about the algorithms used can be found in the 'Extracting the fundamental diagram from aerial footage' paper cited below.
@@ -35,16 +33,10 @@ The dataset images used for the training are not currently provided.
 You can also change the classes/weights/configuration files in data/Configs to your own trained Yolo model (v4 is supported as well for OpenCV version >=4.4).
 More accurate data results are also available at data/Extra_results/. They were exported using tiny YoloV4 trained on our latest updated dataset. Tiny YoloV4 model and the dataset used for training are currently not provided.
 
+[Demo Video of this Project](https://youtu.be/7X2afxxGR4M)
+![harpydemoimg](https://user-images.githubusercontent.com/15671165/113510516-f0409f80-9563-11eb-9a00-c16e88eba790.png)
 
 # Configuration File Instructions (config.ini)
-
-    [Video]
-https://user-images.githubusercontent.com/15671165/113510224-82e03f00-9562-11eb-8033-529ee1d7b0c3.mp4
-
-
-https://user-images.githubusercontent.com/15671165/113510213-752ab980-9562-11eb-9d8a-43f45b566e49.mp4
-
-
     video_filename		= string	, path to the video file
     resize 			= boolean	, True if willing to resize the image before processing (improving performance)
     image_width 		= int		, Width of the resize image (if resize=True)
