@@ -2,8 +2,7 @@
 
 **Project Website link - https://www.kios.ucy.ac.cy/harpydata/**
 
-![Demo Video of this Proejct](https://www.youtube.com/embed/7X2afxxGR4M)
-
+![Demo Video of this Proejct](https://user-images.githubusercontent.com/15671165/113510212-72c85f80-9562-11eb-83d2-7aeaca05a68a.mp4)
 
 **Repository initially published here https://codeocean.com/capsule/6749177/tree.**
 
