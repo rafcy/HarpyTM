@@ -2,6 +2,9 @@
 
 **Project Website link - https://www.kios.ucy.ac.cy/harpydata/**
 
+![Demo Video of this Proejct](https://www.youtube.com/embed/7X2afxxGR4M)
+
+
 **Repository initially published here https://codeocean.com/capsule/6749177/tree.**
 
 The main purpose of the application is to extract traffic data from vehicles on roads using aerial footage taken from static UAVs. To process the footage, deep neural network detector is used (YOLO) alongside with the OpenCV library in ordered to be executed in python. Furthermore, multiple algorithms are used, such as Kalman, Hungarian, in order to match the detections between sequential frames and extract the vehicles and their trajectories. Hence, the velocities and the moving direction of the vehicles are also calculated for each vehicle for every frame. More information about the algorithms used can be found in the 'Extracting the fundamental diagram from aerial footage' paper cited below.
@@ -37,6 +40,12 @@ More accurate data results are also available at data/Extra_results/. They were 
 # Configuration File Instructions (config.ini)
 
     [Video]
+https://user-images.githubusercontent.com/15671165/113510224-82e03f00-9562-11eb-8033-529ee1d7b0c3.mp4
+
+
+https://user-images.githubusercontent.com/15671165/113510213-752ab980-9562-11eb-9d8a-43f45b566e49.mp4
+
+
     video_filename		= string	, path to the video file
     resize 			= boolean	, True if willing to resize the image before processing (improving performance)
     image_width 		= int		, Width of the resize image (if resize=True)
